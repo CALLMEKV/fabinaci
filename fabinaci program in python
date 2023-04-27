@@ -1,0 +1,15 @@
+print("program to print fabinaci series")
+a=[0,1]
+i=2
+p=0
+e=1
+b=int(input("enter the no. to which you want to print fabinaci: "))
+
+for x in range(b-1):
+    a.append(x)
+    a[i]=a[p]+a[e]
+    i=i+1
+    p=p+1
+    e=e+1
+   
+print(a)
